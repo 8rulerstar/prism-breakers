@@ -40,6 +40,8 @@
 
 증거 체인은 대화 전문이 아니라 작은 커밋, 당일 push, Actions 검증 리포트, Pages 배포, DEVLOG의 판단 기록으로 만든다. 증거용 `main`에서는 amend/rebase/force-push를 사용하지 않는다.
 
+첫 공개 기준선은 [`76a8a3d`](https://github.com/8rulerstar/prism-breakers/commit/76a8a3da7f6c9f80d8edfb944e8f15804048c5fe)이며, 첫 Actions 검증과 Pages 배포가 2026-08-07에 성공했다. 다음 세션도 이 증거 사슬을 끊지 말고 작은 작업 단위로 이어 간다.
+
 ## 폐기·보존 대상
 
 - `index.html`, `game.js`, `style.css`: deprecated Echo Run 기술 스파이크. 명시 요청 전 삭제하지 않는다.

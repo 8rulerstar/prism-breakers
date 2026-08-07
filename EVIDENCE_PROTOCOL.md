@@ -56,6 +56,7 @@ artifact는 GitHub의 실행 기록에 귀속되며, 로컬 `DEVLOG.md`만 단�
 - [x] 증거 운영 문서
 - [x] GitHub Actions 검증 워크플로
 - [x] GitHub Pages 배포 워크플로
-- [ ] 첫 공개 원격 push
-- [ ] 첫 Actions artifact / Pages 배포 성공 확인
+- [x] 첫 공개 원격 push — [`76a8a3d`](https://github.com/8rulerstar/prism-breakers/commit/76a8a3da7f6c9f80d8edfb944e8f15804048c5fe), 2026-08-07
+- [x] 첫 Actions artifact 성공 — [Evidence report](https://github.com/8rulerstar/prism-breakers/actions/runs/31156765698), 2026-08-07 07:12 UTC
+- [x] 첫 Pages 배포 성공 — [Deploy to GitHub Pages](https://github.com/8rulerstar/prism-breakers/actions/runs/31156820634), 2026-08-07 07:13 UTC
 - [ ] 작업일별 기록 유지

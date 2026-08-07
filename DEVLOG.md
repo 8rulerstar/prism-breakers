@@ -20,7 +20,7 @@
 - 결과: 초기 Echo Run, 보드/블록형 시안, 그리고 발사 물리 기반의 Prism Breakers 프로토타입을 비교했다. 현재 `prototypes/prism-breakers.html`에는 6인 중 3인 파티 편성, 드래그 발사, 반사, 움직이는 보스 약점, 캐릭터별 물리 능력이 있다.
 - 막힌 점 / 우회: 유저 사망 기록을 전 세계 난이도에 누적하는 구조는 유저가 많을수록 난해해지고, 감소하면 더 재미없어지는 하향 나선 위험이 있었다. 온라인 데이터를 코어에서 제거하고, 싱글 플레이를 완결한 뒤 기록·랭킹만 추가하는 구조로 전환했다.
 - 사람이 직접 결정·수정한 점: 보드형 조작은 직관적이지 않다고 판단해 폐기. World Flipper에서 참조한 것은 핀볼 자체가 아니라 ‘즉시 이해되는 물리 장난감과 수집형 능력의 결합’이며, 최종적으로 당겨 쏘는 반사 유물탄으로 변형했다.
-- 증거: `GAME_DIRECTION.md`, `PROJECT_CONTEXT.md`, `CODEX_COLLABORATION.md`, `prototypes/prism-breakers.html`
+- 증거: [기준선 커밋 `76a8a3d`](https://github.com/8rulerstar/prism-breakers/commit/76a8a3da7f6c9f80d8edfb944e8f15804048c5fe), [자동 검증 리포트](https://github.com/8rulerstar/prism-breakers/actions/runs/31156765698), [첫 GitHub Pages 배포](https://github.com/8rulerstar/prism-breakers/actions/runs/31156820634), `GAME_DIRECTION.md`, `PROJECT_CONTEXT.md`, `CODEX_COLLABORATION.md`, `prototypes/prism-breakers.html`
 
 ## 다음 작업일에 기록할 것
 
