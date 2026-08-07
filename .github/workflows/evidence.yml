@@ -1,0 +1,33 @@
+name: Evidence report
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify prototype and archive report
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out exact submitted revision
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Verify browser prototype
+        run: node scripts/verify-evidence.mjs
+
+      - name: Archive time-stamped verification report
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-${{ github.sha }}
+          path: artifacts/verification.json
+          if-no-files-found: error
+          retention-days: 90
