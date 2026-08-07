@@ -12,13 +12,13 @@ GitHub Pages 배포 후 아래 경로에서 로그인·설치 없이 실행됩�
 2. 유물탄을 뒤로 당겼다가 놓아 발사합니다.
 3. 벽 반사와 캐릭터 룬을 이용해 보스 약점을 맞힙니다.
 
-## 개발 과정과 증거
+## 개발 과정과 검증 기록
 
 - [게임 전략](GAME_DIRECTION.md)
 - [지속 인수인계 메모](PROJECT_CONTEXT.md)
 - [Codex 협업 기록 / 제출 원본](CODEX_COLLABORATION.md)
 - [일일 개발 로그](DEVLOG.md)
-- [외부 시간 기록 운영 규칙](EVIDENCE_PROTOCOL.md)
+- [개발 이력 및 검증 운영 규칙](EVIDENCE_PROTOCOL.md)
 
 `main` 브랜치에 푸시될 때마다 GitHub Actions가 정적 검증 및 기능 표식 검사를 실행하고, 커밋 SHA와 UTC 시각을 담은 검증 리포트를 Actions artifact로 보관합니다. GitHub Pages 배포도 같은 커밋에서 실행됩니다.
 

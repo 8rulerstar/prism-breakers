@@ -12,7 +12,7 @@
 - 구현됨: 브라우저에서 바로 실행되는 단일 HTML 프로토타입, 6명 중 3명을 고르는 파티 편성, 당겨서 발사하는 유물탄, 벽 반사, 움직이는 보스 약점, 캐릭터별 물리 개입 능력.
 - 위치: `prototypes/prism-breakers.html`
 - 아직 구현 전: 제한 발사 수, 보스 실드/페이즈, 스킬 쿨다운, 헤드리스 봇, Hive 연동, 공개 배포.
-- 따라서 아래의 **향후 증거** 항목은 계획이며, 완료 전에는 제출 성과로 표현하지 않는다.
+- 따라서 아래의 **향후 개발 산출물**은 계획이며, 완료 전에는 제출 성과로 표현하지 않는다.
 
 ## Codex를 사용한 지점
 
@@ -52,7 +52,7 @@ Codex는 구현과 비교를 빠르게 했지만, 아래는 사람이 확정한 
 3. World Flipper식의 “익숙한 물리 장난감 + 수집형 능력 조합”이라는 방향을 참조하되, 핀볼 복제가 아닌 **당겨 쏘는 반사 유물탄**으로 변형했다.
 4. Hive는 코어를 성립시키는 의존성이 아니라, 일일 도전·기록·랭킹·이벤트를 확장하는 층으로 제한했다.
 
-## 향후 증거 산출물 (완료 체크용)
+## 향후 개발 산출물 (완료 체크용)
 
 - [ ] `DEVLOG.md`: 매 작업일마다 Codex 요청, 결과, 막힌 점, 사람이 수정한 결정을 기록
 - [ ] `bot/` 또는 동등한 헤드리스 시뮬레이터: 조합·발사각별 클리어율/평균 피해/실패 시드를 JSON 또는 Markdown으로 출력
@@ -61,13 +61,13 @@ Codex는 구현과 비교를 빠르게 했지만, 아래는 사람이 확정한 
 - [ ] 90초~3분 실제 플레이 영상: 게임 60% + 제작 과정 40%
 - [ ] Hive 연동을 실제 구현했다면, 로그인·일일 기록·리더보드 중 완료 범위와 한계를 명시
 
-## 조작 의심을 줄이는 외부 기록
+## 개발 이력과 검증 기록
 
 `EVIDENCE_PROTOCOL.md`에 따라 매 작업일의 마지막 커밋을 당일 GitHub에 push한다. `main` push마다 GitHub Actions가 정확한 commit SHA와 UTC 시각을 담은 검증 리포트를 생성하고, GitHub Pages가 같은 리비전을 배포한다. `DEVLOG.md`는 해당 커밋 SHA와 연결한다.
 
-이 방법은 전체 채팅 로그를 공개하지 않고도 “Codex 요청 → 실제 변경 → 자동 검증 → 공개 실행 화면”의 흐름을 보여 준다. 각 기록의 범위와 한계를 과장하지 않는다.
+이 기록은 “Codex 요청 → 실제 변경 → 자동 검증 → 공개 실행 화면”의 개발 흐름을 짧고 명확하게 보여 준다.
 
-현재 공개 증거: [소스 저장소](https://github.com/8rulerstar/prism-breakers) · [첫 자동 검증](https://github.com/8rulerstar/prism-breakers/actions/runs/31156765698) · [실행 가능한 첫 배포](https://8rulerstar.github.io/prism-breakers/prototypes/prism-breakers.html)
+현재 공개 기록: [소스 저장소](https://github.com/8rulerstar/prism-breakers) · [첫 자동 검증](https://github.com/8rulerstar/prism-breakers/actions/runs/31156765698) · [실행 가능한 첫 배포](https://8rulerstar.github.io/prism-breakers/prototypes/prism-breakers.html)
 
 ## 복사 가능한 제출 문안 (초안)
 

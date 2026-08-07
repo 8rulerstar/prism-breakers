@@ -27,23 +27,23 @@
 4. 게임 루프를 DOM/canvas 없이 호출 가능하게 분리하고, 헤드리스 봇으로 조합·발사각·실패 시드를 출력
 5. 코어 검증 뒤, 일일 기록/리더보드/Hive를 얇게 연동
 
-## Codex 협업 증거 — 반드시 유지
+## Codex 협업 기록 — 반드시 유지
 
 공식 Track 1은 Codex 활용 과정 설명을 선택 가산점으로 받고, 어디에 사용했는지·무엇을 구현했는지·무슨 문제를 해결했는지·사람이 무엇을 결정했는지 설명하도록 한다.
 
 - 제출용 원본: `CODEX_COLLABORATION.md`
 - 매일 기록: `DEVLOG.md`
 - 구현 후 자동 검증: `BOT_REPORT.md` 및 봇 출력
-- 외부 시간 기록 운영: `EVIDENCE_PROTOCOL.md` — `main` push → GitHub Actions artifact → GitHub Pages 배포 → DEVLOG의 commit SHA 연결
+- 개발 이력 및 검증 운영: `EVIDENCE_PROTOCOL.md` — `main` push → GitHub Actions artifact → GitHub Pages 배포 → DEVLOG의 commit SHA 연결
 
 과정의 핵심 사실: Codex는 다수의 프로토타입, 웹 물리/UI, 향후 자동 테스트를 빠르게 만들고 비교하는 역할이다. 사람은 죽음 누적 구조와 직관성이 낮은 보드형 시안을 폐기하고, Prism Breakers의 코어·범위·재미 기준을 결정했다.
 
-증거 체인은 대화 전문이 아니라 작은 커밋, 당일 push, Actions 검증 리포트, Pages 배포, DEVLOG의 판단 기록으로 만든다. 증거용 `main`에서는 amend/rebase/force-push를 사용하지 않는다.
+개발 이력은 대화 전문이 아니라 작은 커밋, 당일 push, Actions 검증 리포트, Pages 배포, DEVLOG의 판단 기록으로 남긴다. 공개 `main`에서는 amend/rebase/force-push를 피한다.
 
-첫 공개 기준선은 [`76a8a3d`](https://github.com/8rulerstar/prism-breakers/commit/76a8a3da7f6c9f80d8edfb944e8f15804048c5fe)이며, 첫 Actions 검증과 Pages 배포가 2026-08-07에 성공했다. 다음 세션도 이 증거 사슬을 끊지 말고 작은 작업 단위로 이어 간다.
+첫 공개 기준선은 [`76a8a3d`](https://github.com/8rulerstar/prism-breakers/commit/76a8a3da7f6c9f80d8edfb944e8f15804048c5fe)이며, 첫 Actions 검증과 Pages 배포가 2026-08-07에 성공했다. 다음 세션도 이 개발 이력을 작은 작업 단위로 이어 간다.
 
 ## 폐기·보존 대상
 
 - `index.html`, `game.js`, `style.css`: deprecated Echo Run 기술 스파이크. 명시 요청 전 삭제하지 않는다.
-- `prototypes/`의 이전 시안: 탐색·Codex 협업 증거로 보존한다. 현재 메인으로 홍보하지 않는다.
+- `prototypes/`의 이전 시안: 탐색·Codex 협업 기록으로 보존한다. 현재 메인으로 홍보하지 않는다.
 - 글로벌 죽음 누적 / 플레이어 데이터로 난이도를 바꾸는 구조: 다시 채택하지 않는다. 대규모 난독화·악용·하향 나선 문제가 있다.
