@@ -4,24 +4,21 @@
 > 맥에서 작업할 때 여기서 골라 쓰면 된다. 실제 게임에 반입할 때는 정식 위치(`assets/bosses`, `assets/library/...` 등)로
 > 옮기거나 리컬러한 뒤 `assets/ASSET_MANIFEST.json`에 등록하고, 여기 남은 원본은 후보로 유지한다.
 
-## 먼저 볼 것 — 저장소에 빠져 있는 파일 7개
+## 런타임 무결성 확인 — 2026-08-12
 
-현재 `prototypes/prism-breakers.html`이 참조하지만 **저장소에 존재하지 않는** 파일이다.
-맥의 `~/Assets/Prism-Breakers-Pixel-Asset-Pack/`에서 생성한 뒤 커밋이 누락된 것으로 보이며,
-게임에서는 폴백(보라 원)이나 깨진 이미지로 표시된다. 맥에 원본이 남아 있으면 그대로 커밋하는 것이 가장 빠르다.
+이전의 “누락 파일 7개” 안내는 제거했다. 아래 런타임 파일은 모두 Git 추적 상태이며,
+`node scripts/check-portability.mjs`와 `node scripts/verify-evidence.mjs`로 함께 확인한다.
 
-| 누락 경로 | 증상 |
-| --- | --- |
-| `assets/library/boss2/void-colossus.png` | 보스가 민무늬 보라 원으로 렌더 |
-| `assets/library/anim/boss2/void-colossus-idle.png` | 〃 |
-| `assets/library/anim/boss2/void-colossus-hit.png` | 〃 |
-| `assets/library/boss2/void-colossus-weakgem.png` | 약점 보석 미표시 |
-| `assets/library/event/achievement-unlocked.png` | 허브·업적 화면 이미지 깨짐 |
-| `assets/library/event/achievement-locked.png` | 잠긴 업적 카드 이미지 깨짐 |
-| `assets/library/system/icon-settings.png` | 설정 탭 아이콘 깨짐 |
+- `assets/library/boss2/void-colossus.png`
+- `assets/library/anim/boss2/void-colossus-idle.png`
+- `assets/library/anim/boss2/void-colossus-hit.png`
+- `assets/library/boss2/void-colossus-weakgem.png`
+- `assets/library/event/achievement-unlocked.png`
+- `assets/library/event/achievement-locked.png`
+- `assets/library/system/icon-settings.png`
 
-맥 원본을 못 찾을 경우의 임시 대체 후보: 설정 아이콘 → `tiny-swords-free/ui/icons/icon-10-gear.png`,
-업적 배지 → `icon-05-sword.png`/`icon-06-shield.png` 또는 `ui/ribbons/`.
+이 폴더의 Tiny Swords 파일은 **후보 보관물**이다. 런타임 대체물이 필요할 때만 정식 위치로
+반입하고, 그 파일을 `assets/ASSET_MANIFEST.json`에 등록한다.
 
 ## 반입 규칙 요약
 
